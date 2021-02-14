@@ -67,7 +67,7 @@ new ESLintPlugin({
 }),
 ```
 ### Disabling linting in specific files:
-For stylelint use [the below code](https://stylelint.io/user-guide/ignore-code#within-files) but be aware of how the [fix parameter works](https://stylelint.io/user-guide/ignore-code#within-files):
+For stylelint use [the below code](https://stylelint.io/user-guide/ignore-code#within-files) but be aware of how the [fix parameter works](https://stylelint.io/user-guide/usage/options#fix):
 ```
 /* stylelint-disable */
 a {}
