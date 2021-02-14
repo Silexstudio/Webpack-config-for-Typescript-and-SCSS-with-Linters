@@ -45,7 +45,7 @@ import "regenerator-runtime/runtime";
 ```
 module.exports = {
     plugins: [
-        'autoprefixer',
+		'autoprefixer',
 		'postcss-preset-env',
     ]
 }
