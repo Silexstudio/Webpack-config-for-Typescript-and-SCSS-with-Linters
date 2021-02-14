@@ -1,0 +1,53 @@
+{
+  "name": "webpack-config-for-typescript-and-sass-with-linters",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Dombi Botond",
+  "email": "silexworks@gmail.com",
+  "scripts": {
+    "watch": "parallel-webpack --config webpack.dev.js --watch",
+    "production": "parallel-webpack --config webpack.prod.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/plugin-proposal-class-properties": "^7.12.13",
+    "@babel/plugin-proposal-decorators": "^7.12.13",
+    "@babel/plugin-transform-runtime": "^7.12.15",
+    "@babel/preset-env": "^7.12.16",
+    "@babel/preset-typescript": "^7.12.16",
+    "@typescript-eslint/eslint-plugin": "^4.15.0",
+    "@typescript-eslint/parser": "^4.15.0",
+    "autoprefixer": "^10.2.4",
+    "babel-loader": "^8.2.2",
+    "babel-minify-webpack-plugin": "^0.3.1",
+    "css-loader": "^5.0.2",
+    "eslint": "^7.19.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-webpack-plugin": "^2.5.0",
+    "mini-css-extract-plugin": "^1.3.6",
+    "node-sass": "^5.0.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "parallel-webpack": "^2.6.0",
+    "postcss": "^8.2.6",
+    "postcss-loader": "^5.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-reporter": "^7.0.2",
+    "postcss-sorting": "^6.0.0",
+    "sass-loader": "^11.0.1",
+    "stylelint": "^13.10.0",
+    "stylelint-config-idiomatic-order": "^8.1.0",
+    "stylelint-config-sass-guidelines": "^8.0.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-webpack-plugin": "^2.1.1",
+    "typescript": "^4.1.5",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-merge": "^5.7.3"
+  },
+  "dependencies": {
+    "core-js": "^3.8.3"
+  }
+}
