@@ -7,5 +7,6 @@
 - Support for **React**
 - Support for **IE11** and polyfills using core.js
 - Minifying for css/js in production config **only**
+- Minimal output after compilation
 
 ### Questions/suggestions on improving the configuration are more than welcome.

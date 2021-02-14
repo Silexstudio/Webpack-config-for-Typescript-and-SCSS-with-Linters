@@ -1,5 +1,5 @@
 module.exports = function (api) {
-    api.cache(false);
+    api.cache.forever();
 
     const presets = [
         ['@babel/preset-typescript'],
