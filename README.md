@@ -44,10 +44,10 @@ import "regenerator-runtime/runtime";
 2. Define your postcss config at [postcss.config.js](postcss.config.js) (currently includes autoprefixer and polyfills with [postcss-preset-env](https://github.com/csstools/postcss-preset-env#postcss-preset-env-))
 ```
 module.exports = {
-    plugins: [
+	plugins: [
 		'autoprefixer',
 		'postcss-preset-env',
-    ]
+	]
 }
 ```
 
