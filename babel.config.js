@@ -1,6 +1,4 @@
 module.exports = function (api) {
-    api.cache.forever();
-
     const presets = [
         ['@babel/preset-typescript'],
         [
@@ -12,11 +10,17 @@ module.exports = function (api) {
         ]
     ];
 
-    const plugins = [
-        ['@babel/plugin-proposal-decorators', {decoratorsBeforeExport: true}],
+    let plugins = [
+        ['@babel/plugin-proposal-decorators', { decoratorsBeforeExport: true }],
         ['@babel/plugin-proposal-class-properties'],
-        ['@babel/transform-runtime', { corejs: 3 }]
+        ['@babel/transform-runtime', { corejs: 3 }],
     ];
+
+	if(api.env('production')){
+		plugins.push(['transform-remove-console', { exclude: [ 'error', 'warn'] }]);
+	}
+
+	api.cache.forever();
 
     return {
         presets,

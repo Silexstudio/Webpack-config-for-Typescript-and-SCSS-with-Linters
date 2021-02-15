@@ -8,10 +8,8 @@ const MinifyPlugin = require('babel-minify-webpack-plugin');
 const StylelintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = merge(common, {
+    mode : 'production',
 	watch : false,
-	optimization: {
-		minimize: false,
-    },
     plugins: [
 		new StylelintPlugin({
 			fix: true,
@@ -38,5 +36,8 @@ module.exports = merge(common, {
             canPrint: true
 		}),
 		new MinifyPlugin()
-    ]
+    ],
+	optimization: {
+		minimize: false,
+    }
 });

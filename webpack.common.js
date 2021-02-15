@@ -3,15 +3,11 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-    mode : 'production',
     entry : {
         'app' : ['./src/js/app.ts', './src/scss/app.scss'],
     },
     performance: {
         hints: false
-    },
-    watchOptions : {
-        aggregateTimeout : 400,
     },
     output : {
         path : path.resolve(__dirname, './dist'),

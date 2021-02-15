@@ -6,6 +6,12 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const StylelintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = merge(common, {
+    mode : 'development',
+	watch : true,
+	watchOptions : {
+        aggregateTimeout : 400,
+		ignored: '/node_modules/'
+    },
     plugins: [
 		new StylelintPlugin({
 			fix: true,
