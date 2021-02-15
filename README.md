@@ -1,7 +1,7 @@
 # Webpack config for **Typescript** and **SCSS** with Linters
 ## **Includes:**
 - Development and Production configs using **webpack-merge**
-- Caching and optimization on development config (including the use of  **webpack-parallel**)
+- Caching and optimization on development config (including the use of  **parallel-webpack**)
 - ESLint (with Autofix, with Google standard using **eslint-config-google**)
 - Stylelint (with Autofix, with Idiomatic order using **stylelint-config-idiomatic-order** and SASS guidelines)
 - Support for **React**
@@ -44,10 +44,10 @@ import "regenerator-runtime/runtime";
 2. Define your postcss config at [postcss.config.js](postcss.config.js) (currently includes autoprefixer and polyfills with [postcss-preset-env](https://github.com/csstools/postcss-preset-env#postcss-preset-env-))
 ```
 module.exports = {
-    plugins: [
+	plugins: [
 		'autoprefixer',
 		'postcss-preset-env',
-    ]
+	]
 }
 ```
 
